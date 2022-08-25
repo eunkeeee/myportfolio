@@ -1,0 +1,42 @@
+.wrapper {
+  margin-bottom: 2rem;
+  width: 33.33%;
+}
+.basic_info {
+  display: flex;
+  flex-flow: row nowrap;
+  max-width: 14rem;
+  margin: 0 auto;
+  opacity: 0.8;
+  font-family: var(--ko-article);
+}
+.icon_wrapper {
+  width: 2rem;
+  min-width: 2rem;
+  height: 2rem;
+  /* object-fit: contain; */
+  font-size: 2rem;
+  margin-top: 0.2rem;
+  margin-right: 2rem;
+}
+.fieldLabel {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.fieldValue {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .wrapper {
+    width: 100%;
+  }
+}
