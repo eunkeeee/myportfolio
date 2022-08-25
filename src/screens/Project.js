@@ -17,7 +17,9 @@ const Project = () => {
           imgSrc={<img src={ProjectProfileWebsite} />}
           title="포트폴리오 웹사이트"
           period="2022.08 (개인 프로젝트)"
-          gitHubLink="https://github.com/eunkeeee/eunkeeee-portfolio.git"
+          gitHubLink="https://github.com/eunkeeee/myportfolio"
+          url="https://main.d3u6yjfxnkwlmm.amplifyapp.com/"
+          deployment="AWS"
           MainDescription={
             <div>
               <b>포트폴리오로 사용하기 위해 제작한 웹사이트</b>입니다. 현재
