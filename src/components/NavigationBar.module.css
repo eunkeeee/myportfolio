@@ -1,0 +1,42 @@
+.menus {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 2rem;
+  cursor: pointer;
+  color: var(--transparent-white);
+  font-weight: 400;
+  transition: all 0.4s;
+}
+.menu a:hover {
+  color: var(--logo-color);
+  font-weight: 900;
+}
+@media screen and (max-width: 1100px) {
+  .menus {
+    display: none;
+    background-color: tomato;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+  .menu a {
+    color: black;
+    opacity: 0.5;
+    font-weight: 500;
+    transition: all 0.1s ease-in-out;
+  }
+  .menu a:hover {
+    opacity: 1;
+    font-weight: 600;
+  }
+  .menus.active {
+    display: flex;
+  }
+}

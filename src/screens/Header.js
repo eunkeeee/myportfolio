@@ -1,9 +1,9 @@
 import styles from "./Header.module.css";
+import NavigationBar from "../components/NavigationBar";
 import { useState, useRef } from "react";
 
 const Header = ({ onClick }) => {
   const listElement = useRef(null);
-  // console.log(menus);
   const [isLargeEnough, setLargeEnough] = useState();
   const onResize = () => {
     if (window.innerWidth < 1100) {
@@ -13,16 +13,6 @@ const Header = ({ onClick }) => {
     }
   };
 
-  // window.addEventListener("resize", onResize);
-  // const media = window.matchMedia(useMediaQuery);
-  // matchMedia("screen and (max-width: 1100px)");
-  // const [whiteHeader, setWhite] = useState(false);
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY > 80) {
-  //     setWhite(true);
-  //   }
-  // });
-
   return (
     <div>
       <header className={styles.Header} onClick={onClick}>
@@ -30,25 +20,7 @@ const Header = ({ onClick }) => {
           <a href="#top">
             <div className={styles.title}>CEK's Portfolio</div>
           </a>
-
-          <div className={styles.navigation__menus}>
-            {/* Navigation Bar */}
-            <div className={styles.navigation__menu}>
-              <a href="#AboutMe">About Me</a>
-            </div>
-            <div className={styles.navigation__menu}>
-              <a href="#Skills">Skills</a>
-            </div>
-            <div className={styles.navigation__menu}>
-              <a href="#Archiving">Archiving</a>
-            </div>
-            <div className={styles.navigation__menu}>
-              <a href="#Projects">Projects</a>
-            </div>
-            {/* <div className={styles.navigation__menu}>
-                <a href="#AboutMe">Career</a>
-              </div> */}
-          </div>
+          <NavigationBar />
 
           <a
             href="#"
