@@ -26,6 +26,14 @@ const PrjoectElement = ({
         </div>
         <div className={styles.descriptions}>
           <div className={styles.MainDescription}>{MainDescription}</div>
+          {/* 소스코드 바로가기 버튼 */}
+          <a href={gitHubLink} target="_blank">
+            <button className={styles.btn}>
+              <i class="fa-brands fa-github"></i>
+              <div>Source Code</div>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
           <hr />
           <ul className="fa-ul">
             <li className={styles.li}>
@@ -89,15 +97,6 @@ const PrjoectElement = ({
           </ul>
         </div>
       </div>
-      {/* <img className={styles.img} src={imgSrc} />
-      <h4>{subtitle}</h4>
-      <a target="_blank" href={gitHubLink}>
-        GitHub 바로가기
-      </a>
-      <div className={styles.props}>
-        <h5>ReactJS</h5>
-        <h5>개인</h5>
-      </div> */}
     </div>
   );
 };

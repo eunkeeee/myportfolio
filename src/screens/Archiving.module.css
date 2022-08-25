@@ -26,7 +26,7 @@
   transition: all 0.4s;
 }
 .element:hover {
-  transform: translateY(5px);
+  transform: var(--getting-bigger);
 }
 .elementImg {
   width: 100%;

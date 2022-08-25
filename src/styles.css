@@ -41,6 +41,8 @@ a {
   --Archiving-element-background: white;
   --Project-background: #1fa0be;
   --Footer-background: black;
+
+  --getting-bigger: scale(1.04) translateY(-5px);
 }
 
 body {

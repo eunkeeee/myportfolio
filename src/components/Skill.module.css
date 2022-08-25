@@ -11,7 +11,8 @@
   transition: all 0.4s;
 }
 .tech:hover {
-  transform: translateY(5px);
+  transform: var(--getting-bigger);
+  box-shadow: 0.7rem 0.7rem 0.3rem var(--light-background-color);
 }
 .title {
   padding-bottom: 0.5rem;
