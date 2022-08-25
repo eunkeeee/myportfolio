@@ -27,13 +27,7 @@ const PrjoectElement = ({
         <div className={styles.descriptions}>
           <div className={styles.MainDescription}>{MainDescription}</div>
           {/* 소스코드 바로가기 버튼 */}
-          <a href={gitHubLink} target="_blank">
-            <button className={styles.btn}>
-              <i class="fa-brands fa-github"></i>
-              <div>Source Code</div>
-              <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </a>
+
           <hr />
           <ul className="fa-ul">
             <li className={styles.li}>
@@ -97,6 +91,14 @@ const PrjoectElement = ({
           </ul>
         </div>
       </div>
+      {/* position absolute로 할것 */}
+      <a className={styles.btnWrapper} href={gitHubLink} target="_blank">
+        <button className={styles.btn}>
+          <i class="fa-brands fa-github"></i>
+          <div>Source Code</div>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
     </div>
   );
 };

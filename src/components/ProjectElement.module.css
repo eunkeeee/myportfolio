@@ -5,6 +5,8 @@
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
+  /* Source Code Btn을 위한것 */
+  position: relative;
 }
 .title {
   padding-bottom: 0.5rem;
@@ -47,25 +49,9 @@
   font-family: var(--ko-article);
   width: 45%;
 }
-.btn {
-  border: none;
-  background-color: #384152;
-  color: white;
-  font-size: 1.3rem;
-  line-height: 1.25rem;
-  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: calc(1.25rem + 1rem);
-}
-.btn i:first-child {
-  font-size: 2rem;
-  margin-right: 2rem;
-}
-.btn i:last-child {
-  margin-left: 1rem;
-  font-size: 1rem;
+
+ul {
+  margin-bottom: 3rem;
 }
 .li {
   display: flex;
@@ -86,12 +72,33 @@
   word-break: break-all;
   flex-shrink: 2;
 }
-.urlDeco {
-  text-decoration: none;
+/* Source Code Btn */
+.btnWrapper {
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
 }
-.urlDeco:visited {
-  text-decoration: none;
+.btn {
+  border: none;
+  background-color: #384152;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.25rem;
+  padding: 0.5rem 1.25rem 0.5rem 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: calc(1.25rem + 1rem);
 }
+.btn i:first-child {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.btn i:last-child {
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 1000px) {
   .info {
     flex-direction: column;
@@ -104,5 +111,16 @@
     margin-top: 3rem;
     width: 100%;
     word-break: break-all;
+  }
+}
+@media screen and (max-width: 640px) {
+  .li {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .li div:first-child,
+  .li > div:last-child,
+  .li > div:last-child * {
+    width: 100%;
   }
 }
