@@ -1,0 +1,35 @@
+.tech {
+  flex-shrink: 0;
+  /* margin: 0 auto 2rem; */
+  margin: 10px;
+  /* 나중에 지울것 */
+  width: 17rem;
+  padding: 1.3rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0.4rem 0.4rem 0.4rem var(--light-background-color);
+  transition: all 0.4s;
+}
+.tech:hover {
+  transform: translateY(5px);
+}
+.title {
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-bottom);
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: var(--en-article);
+  color: red;
+}
+.imgDiv div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.imgDiv div * {
+  height: 100px;
+  width: 100%;
+  object-fit: contain;
+}

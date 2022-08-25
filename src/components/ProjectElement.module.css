@@ -1,0 +1,91 @@
+.Project {
+  padding: 3rem;
+  margin: 0 auto 2rem;
+  background-color: white;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  padding-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: rgb(34, 34, 34);
+  text-align: center;
+  font-family: var(--ko-title);
+}
+.period {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: black;
+  opacity: 0.6;
+  text-align: center;
+  font-family: var(--ko-article);
+}
+.info {
+  display: flex;
+  justify-content: center;
+}
+.imgs {
+  width: 50%;
+  margin-right: 3rem;
+}
+.imgs * {
+  width: 100%;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 1rem auto 0;
+  font-weight: 500;
+}
+.nav i {
+  text-align: center;
+  opacity: 0.7;
+}
+.descriptions {
+  font-family: var(--ko-article);
+  width: 45%;
+}
+
+.li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.li div:first-child {
+  width: 8.2rem;
+  font-weight: 900;
+  font-size: 1rem;
+  vertical-align: top;
+  color: tomato;
+  flex-shrink: 1;
+}
+.li > div:last-child,
+.li > div:last-child * {
+  font-weight: 400;
+  font-size: 0.9rem;
+  width: calc(100% - 8.2rem);
+  word-break: break-all;
+  color: blue;
+  flex-shrink: 2;
+}
+.urlDeco {
+  text-decoration: none;
+}
+.urlDeco:visited {
+  text-decoration: none;
+}
+@media screen and (max-width: 1000px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgs {
+    margin: 0;
+  }
+  .descriptions {
+    margin-top: 3rem;
+    width: 100%;
+    word-break: break-all;
+  }
+}

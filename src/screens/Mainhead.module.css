@@ -1,0 +1,72 @@
+.Mainhead {
+  position: relative;
+}
+.Mainhead::before {
+  filter: brightness(50%);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/logoBackImg.jpg");
+  background-size: cover;
+  z-index: -1;
+}
+.content {
+  position: relative;
+  width: 100%;
+  max-width: 71.25rem;
+  margin: 0 auto;
+  padding: 8.5rem 2rem 4rem 2rem;
+  text-align: center;
+  font-family: var(--ko-article);
+}
+.title {
+  font-size: 4rem;
+  color: white;
+  word-break: keep-all;
+  font-family: var(--ko-title);
+  animation: appear 2s ease-in-out 0s;
+}
+.divider {
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  height: 0;
+  border: none;
+  border-top: 0.2rem solid var(--logo-color);
+  opacity: 0;
+  animation: appear 2s ease-in-out 0.3s forwards;
+}
+.description {
+  margin: 0 auto 2rem;
+  color: var(--transparent-white);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  opacity: 0;
+  animation: appear 2s ease-in-out 0.5s forwards;
+}
+.findOutMore {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--logo-color);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+  opacity: 0;
+  animation: appear 2s ease-in-out 1s forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

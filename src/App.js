@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Header from "./screens/Header";
+import Mainhead from "./screens/Mainhead";
+import AboutMe from "./screens/AboutMe";
+import Skills from "./screens/Skills";
+import Archiving from "./screens/Archiving";
+import Project from "./screens/Project";
+import Footer from "./screens/Footer";
 
 function App() {
+  const [nav, selectNav] = useState("Home");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Mainhead />
+      <AboutMe />
+      <Skills />
+      <Archiving />
+      <Project />
+      <Footer />
+
+      <a href="#top">
+        <div class="pageUpBtn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </a>
     </div>
   );
 }

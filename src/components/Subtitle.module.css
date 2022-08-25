@@ -1,0 +1,32 @@
+.SectionTitle_Sectiontitle {
+  position: relative;
+  display: table;
+  margin: 0 auto 3rem;
+}
+.SectionTitle_text {
+  color: black;
+  border-bottom: 1px solid var(--light-gray);
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: "Shadows Into Light", cursive;
+}
+.SectionTitle_link_wrapper {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  margin-top: -1rem;
+  left: -3.2rem;
+  opacity: 0.5;
+}
+.url {
+  color: white;
+  opacity: 1;
+  /* display: block;
+  position: relative;
+  top: -5rem; */
+  /* visibility: hidden; */
+}
+.url:target {
+  scroll-padding-top: 5rem;
+}

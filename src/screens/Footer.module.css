@@ -1,0 +1,20 @@
+.Footer {
+  height: 12rem;
+  background-color: var(--Footer-background);
+  padding-top: 3rem;
+  text-align: center;
+}
+.icons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.copyright {
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  font-family: var(--en-article);
+}

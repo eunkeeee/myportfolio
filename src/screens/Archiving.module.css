@@ -1,0 +1,33 @@
+.Archiving {
+  background-color: var(--Archiving-background);
+  font-family: var(--ko-article);
+}
+.content {
+  width: 100%;
+  max-width: 71.25rem;
+  padding: 4rem 2rem;
+  margin: 0 auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  line-height: normal;
+}
+/* Element */
+.element {
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--Archiving-element-background);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.element:hover {
+  transform: translateY(5px);
+}
+.elementImg {
+  width: 100%;
+}
