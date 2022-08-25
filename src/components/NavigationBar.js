@@ -3,20 +3,28 @@ const NavigationBar = () => {
   return (
     <div className={styles.menus}>
       {/* Navigation Bar */}
-      <div className={styles.menu}>
-        <a href="#AboutMe">About Me</a>
+      <div>
+        <a className={styles.menu} href="#AboutMe">
+          About Me
+        </a>
       </div>
-      <div className={styles.menu}>
-        <a href="#Skills">Skills</a>
+      <div>
+        <a className={styles.menu} href="#Skills">
+          Skills
+        </a>
       </div>
-      <div className={styles.menu}>
-        <a href="#Archiving">Archiving</a>
+      <div>
+        <a className={styles.menu} href="#Archiving">
+          Archiving
+        </a>
       </div>
-      <div className={styles.menu}>
-        <a href="#Projects">Projects</a>
+      <div>
+        <a className={styles.menu} href="#Projects">
+          Projects
+        </a>
       </div>
-      {/* <div className={styles.menu}>
-      <a href="#AboutMe">Career</a>
+      {/* <div >
+      <a href="className={styles.menu} #AboutMe">Career</a>
     </div> */}
     </div>
   );
