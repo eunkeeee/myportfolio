@@ -5,7 +5,7 @@ import useWindowDimensions from "../functions/useWindowDimensions";
 
 const Header = () => {
   const [menu, setMenu] = useState(true);
-  const [isWhite, setWhite] = useState(false);
+  const [background, setBackground] = useState(false);
   const onResize = () => {
     const { innerWidth: width, innerHeight: height } = window;
     if (width < 768) {
@@ -16,15 +16,29 @@ const Header = () => {
   };
   window.addEventListener("resize", onResize);
 
-  const onScroll = () => {};
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 80) {
+      setBackground(true);
+    } else {
+      setBackground(false);
+    }
+  });
   return (
     <div>
-      <header className={styles.Header} onScroll={onScroll}>
+      <header
+        className={styles.Header}
+        style={{ backgroundColor: `${background ? "white" : "transparent"}` }}
+      >
         <div className={styles.content}>
           <a href="#top">
-            <div className={styles.title}>CEK's Portfolio</div>
+            <div
+              className={styles.title}
+              style={{ color: `${background ? "black" : "#6ad7f6"}` }}
+            >
+              CEK's Portfolio
+            </div>
           </a>
-          {menu ? <NavigationBar /> : null}
+          {menu ? <NavigationBar background={background} /> : null}
 
           <a
             href="#"

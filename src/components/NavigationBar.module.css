@@ -8,9 +8,11 @@
   font-weight: 700;
   line-height: 2rem;
   cursor: pointer;
-  color: var(--transparent-white);
   font-weight: 400;
   transition: all 0.4s;
+}
+.menu:visited {
+  text-decoration: none;
 }
 .menu:hover {
   color: var(--logo-color);
