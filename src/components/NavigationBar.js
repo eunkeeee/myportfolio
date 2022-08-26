@@ -23,9 +23,6 @@ const NavigationBar = () => {
           Projects
         </a>
       </div>
-      {/* <div >
-      <a href="className={styles.menu} #AboutMe">Career</a>
-    </div> */}
     </div>
   );
 };
