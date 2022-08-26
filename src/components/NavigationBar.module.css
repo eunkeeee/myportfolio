@@ -16,18 +16,13 @@
   color: var(--logo-color);
   font-weight: 900;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 768px) {
   .menus {
-    display: none;
-    background-color: tomato;
     margin-top: 2rem;
     flex-direction: column;
     width: 100%;
     align-items: center;
     gap: 5px;
-  }
-  .menus.active {
-    display: flex;
   }
   .menu {
     color: black;
