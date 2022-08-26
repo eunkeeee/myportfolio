@@ -3,7 +3,7 @@ import NavigationBar from "../components/NavigationBar";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-  const backgroundLogoColor = "black";
+  const backgroundLogoColor = "#334A52";
   const [menu, setMenu] = useState(true);
   const [background, setBackground] = useState(false);
   const onResize = () => {

@@ -1,6 +1,7 @@
 import styles from "./NavigationBar.module.css";
 const NavigationBar = ({ background }) => {
   const transparentWhite = "hsla(0, 0%, 100%, 0.7)";
+  const backgroundMenuColor = "#334A52";
   return (
     <div className={styles.menus}>
       {/* Navigation Bar */}
@@ -8,7 +9,7 @@ const NavigationBar = ({ background }) => {
         <a
           className={styles.menu}
           style={{
-            color: `${background ? "black" : transparentWhite}`,
+            color: `${background ? backgroundMenuColor : transparentWhite}`,
           }}
           href="#AboutMe"
         >
@@ -19,7 +20,7 @@ const NavigationBar = ({ background }) => {
         <a
           className={styles.menu}
           style={{
-            color: `${background ? "black" : transparentWhite}`,
+            color: `${background ? backgroundMenuColor : transparentWhite}`,
           }}
           href="#Skills"
         >
@@ -30,7 +31,7 @@ const NavigationBar = ({ background }) => {
         <a
           className={styles.menu}
           style={{
-            color: `${background ? "black" : transparentWhite}`,
+            color: `${background ? backgroundMenuColor : transparentWhite}`,
           }}
           href="#Archiving"
         >
@@ -41,7 +42,7 @@ const NavigationBar = ({ background }) => {
         <a
           className={styles.menu}
           style={{
-            color: `${background ? "black" : transparentWhite}`,
+            color: `${background ? backgroundMenuColor : transparentWhite}`,
           }}
           href="#Projects"
         >
