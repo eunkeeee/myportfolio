@@ -1,7 +1,6 @@
 import styles from "./Header.module.css";
 import NavigationBar from "../components/NavigationBar";
-import { useState } from "react";
-import styled, { keyframes } from "styled-components";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const backgroundLogoColor = "black";
@@ -11,16 +10,23 @@ const Header = () => {
     const { innerWidth: width, innerHeight: height } = window;
     if (width <= 768) {
       setMenu(false);
-    } else {
-      setMenu(true);
-    }
-  };
-  window.addEventListener("resize", onResize);
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY >= 80) {
       setBackground(true);
     } else {
+      setMenu(true);
+      setBackground(false);
+    }
+  };
+
+  // 이게 왜 해결을 한거지?
+  useEffect(onResize, [background]);
+  window.addEventListener("resize", onResize);
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 80) {
+      setBackground(true);
+    } else {
+      // if (!menu) {
+      //   return setBackground(true);
+      // }
       setBackground(false);
     }
   });
