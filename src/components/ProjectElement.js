@@ -26,7 +26,6 @@ const PrjoectElement = ({
         </div>
         <div className={styles.descriptions}>
           <div className={styles.MainDescription}>{MainDescription}</div>
-          {/* 소스코드 바로가기 버튼 */}
 
           <hr />
           <ul className="fa-ul">
@@ -92,6 +91,7 @@ const PrjoectElement = ({
         </div>
       </div>
       {/* position absolute로 할것 */}
+      {/* 소스코드 바로가기 버튼 */}
       <a className={styles.btnWrapper} href={gitHubLink} target="_blank">
         <button className={styles.btn}>
           <i class="fa-brands fa-github"></i>
