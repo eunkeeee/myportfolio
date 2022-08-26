@@ -16,20 +16,25 @@ const Header = () => {
       setBackground(false);
     }
   };
-
-  // 이게 왜 해결을 한거지?
-  useEffect(onResize, [background]);
-  window.addEventListener("resize", onResize);
-  window.addEventListener("scroll", () => {
+  const scrollDown = () => {
+    console.log(window.scrollY);
     if (window.scrollY > 80) {
       setBackground(true);
     } else {
-      // if (!menu) {
-      //   return setBackground(true);
-      // }
       setBackground(false);
+      if (window.innerWidth <= 768) {
+        setBackground(true);
+      }
     }
-  });
+  };
+  window.addEventListener("resize", onResize);
+  window.addEventListener("scroll", scrollDown);
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      setMenu(false);
+      setBackground(true);
+    }
+  }, []);
   return (
     <div>
       <header
