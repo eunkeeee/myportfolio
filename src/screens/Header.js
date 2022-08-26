@@ -9,7 +9,7 @@ const Header = () => {
   const [background, setBackground] = useState(false);
   const onResize = () => {
     const { innerWidth: width, innerHeight: height } = window;
-    if (width < 768) {
+    if (width <= 768) {
       setMenu(false);
     } else {
       setMenu(true);
@@ -18,7 +18,7 @@ const Header = () => {
   window.addEventListener("resize", onResize);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 80) {
+    if (window.scrollY >= 80) {
       setBackground(true);
     } else {
       setBackground(false);
