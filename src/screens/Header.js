@@ -4,6 +4,7 @@ import { useState } from "react";
 import useWindowDimensions from "../functions/useWindowDimensions";
 
 const Header = () => {
+  const backgroundLogoColor = "black";
   const [menu, setMenu] = useState(true);
   const [background, setBackground] = useState(false);
   const onResize = () => {
@@ -33,7 +34,10 @@ const Header = () => {
           <a href="#top">
             <div
               className={styles.title}
-              style={{ color: `${background ? "black" : "#6ad7f6"}` }}
+              // 색상 좀 멋진걸로 변경해볼까?
+              style={{
+                color: `${background ? backgroundLogoColor : "#6ad7f6"}`,
+              }}
             >
               CEK's Portfolio
             </div>
