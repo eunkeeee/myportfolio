@@ -5,6 +5,7 @@ import useWindowDimensions from "../functions/useWindowDimensions";
 
 const Header = () => {
   const [menu, setMenu] = useState(true);
+  const [isWhite, setWhite] = useState(false);
   const onResize = () => {
     const { innerWidth: width, innerHeight: height } = window;
     if (width < 768) {
@@ -14,9 +15,11 @@ const Header = () => {
     }
   };
   window.addEventListener("resize", onResize);
+
+  const onScroll = () => {};
   return (
     <div>
-      <header className={styles.Header}>
+      <header className={styles.Header} onScroll={onScroll}>
         <div className={styles.content}>
           <a href="#top">
             <div className={styles.title}>CEK's Portfolio</div>
