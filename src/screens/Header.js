@@ -14,6 +14,9 @@ const Header = () => {
     } else {
       setMenu(true);
       setBackground(false);
+      if (window.scrollY > 80) {
+        setBackground(true);
+      }
     }
   };
   const scrollDown = () => {
