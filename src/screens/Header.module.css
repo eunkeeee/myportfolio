@@ -6,6 +6,18 @@
   z-index: 999;
   font-family: var(--en-article);
 }
+.Header.drop {
+  position: fixed;
+  animation: dropHeader 0.3s;
+}
+@keyframes dropHeader {
+  0% {
+    top: -5rem;
+  }
+  100% {
+    top: 0;
+  }
+}
 .content {
   display: flex;
   justify-content: space-between;

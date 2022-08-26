@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import NavigationBar from "../components/NavigationBar";
 import { useState } from "react";
+import styled, { keyframes } from "styled-components";
 
 const Header = () => {
   const backgroundLogoColor = "black";
@@ -26,7 +27,7 @@ const Header = () => {
   return (
     <div>
       <header
-        className={styles.Header}
+        className={`${styles.Header} ${background ? styles.drop : ""}`}
         style={{ backgroundColor: `${background ? "white" : "transparent"}` }}
       >
         <div className={styles.content}>
