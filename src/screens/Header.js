@@ -1,7 +1,6 @@
 import styles from "./Header.module.css";
 import NavigationBar from "../components/NavigationBar";
 import { useState } from "react";
-import useWindowDimensions from "../functions/useWindowDimensions";
 
 const Header = () => {
   const backgroundLogoColor = "black";
