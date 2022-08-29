@@ -30,6 +30,10 @@ const Header = () => {
       }
     }
   };
+
+  useEffect(onResize, [menu, background]);
+  useEffect(scrollDown, [menu, background]);
+
   window.addEventListener("resize", onResize);
   window.addEventListener("scroll", scrollDown);
   useEffect(() => {

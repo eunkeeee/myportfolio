@@ -51,7 +51,7 @@ text-decoration: none;
 
 body {
   margin: 0;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .pageUpBtn {
