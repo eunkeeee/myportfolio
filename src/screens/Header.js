@@ -31,8 +31,8 @@ const Header = () => {
     }
   };
 
-  useEffect(onResize, [menu, background]);
-  useEffect(scrollDown, [menu, background]);
+  // useEffect(onResize, [menu, background]);
+  // useEffect(scrollDown, [menu, background]);
 
   window.addEventListener("resize", onResize);
   window.addEventListener("scroll", scrollDown);
@@ -63,7 +63,7 @@ const Header = () => {
           {menu ? <NavigationBar background={background} /> : null}
 
           <a
-            href="#"
+            // href="#"
             className={styles.toggleBtn}
             onClick={() => {
               setMenu((current) => !current);

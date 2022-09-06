@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import Header from "./screens/Header";
 import Mainhead from "./screens/Mainhead";

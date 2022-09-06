@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@500&family=Open+Sans&family=Secular+One&family=Shadows+Into+Light&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@500&family=Open+Sans&family=Secular+One&family=Shadows+Into+Light&display=swap');
 
 * {
   box-sizing: border-box;
@@ -34,6 +35,7 @@ text-decoration: none;
   --en-article: "Open Sans", sans-serif;
   --ko-title: "Black Han Sans", sans-serif;
   --ko-article: "IBM Plex Sans KR", sans-serif;
+  --black-han-sans: 'Black Han Sans', sans-serif;
 
   /* Layout */
   --screen-margin-top: calc(5rem + 20px);
