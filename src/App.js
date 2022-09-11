@@ -9,6 +9,7 @@ import Project from "./screens/Project";
 import Footer from "./screens/Footer";
 
 function App() {
+  const isWideEnough = () => {};
   const [appearBtn, setAppear] = useState(false);
   const scrollDown = () => {
     if (window.scrollY > 500) {
