@@ -5,7 +5,7 @@ const NavigationBar = ({ background }) => {
   const transparentWhite = "hsla(0, 0%, 100%, 0.7)";
   const backgroundMenuColor = "#334A52";
   return (
-    <div className={styles.menus}>
+    <div className={styles.menus} id="section-navBar">
       <NavMenu
         text="About Me"
         href="#section-AboutMe"
