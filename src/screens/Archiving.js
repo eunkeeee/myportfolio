@@ -6,7 +6,7 @@ const Archiving = () => {
   return (
     <div className={styles.Archiving}>
       <div className={styles.content}>
-        <SubTitle id="Archiving" title="Archiving" color="white" />
+        <SubTitle id="Archiving" title="연락처" color="white" />
         <div className={styles.container}>
           <ArchivingElement
             imgSrc="https://png.monster/wp-content/uploads/2022/02/png.monster-703.png"

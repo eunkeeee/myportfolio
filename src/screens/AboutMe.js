@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <article className={styles.AboutMe}>
       <div className={styles.content}>
-        <SubTitle title="ABOUT ME" id="AboutMe" />
+        <SubTitle title="자기소개" id="AboutMe" />
         <div className={styles.basic_infos}>
           <AboutMeElement
             iconImport={<i class="fa-solid fa-person"></i>}

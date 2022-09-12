@@ -14,8 +14,8 @@ export const NavMenu = ({ background, text, index }) => {
     const elementsHeight = [
       aboutMeHeight,
       skillsHeight,
-      ArchivingHeight,
       ProjectHeight,
+      ArchivingHeight,
     ];
     const elementHeight = elementsHeight[index];
     window.scrollTo({

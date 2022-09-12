@@ -2,6 +2,7 @@
   position: relative;
   display: table;
   margin: 0 auto 3rem;
+  font-family: "Gmarket-Sans-Bold";
 }
 .text {
   color: black;

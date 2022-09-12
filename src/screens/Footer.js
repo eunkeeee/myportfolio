@@ -20,7 +20,6 @@ const Footer = () => {
   };
   return (
     <div className={styles.Footer}>
-      <SubTitle title="Contact" id="Contact" color="white" />
       <div className={styles.icons}>
         <Icon
           text="Github Link"
