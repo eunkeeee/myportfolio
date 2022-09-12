@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import NavigationBar from "../components/NavigationBar";
+import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
 
 const Header = () => {
@@ -20,7 +20,6 @@ const Header = () => {
     }
   };
   const scrollDown = () => {
-    console.log(window.scrollY);
     if (window.scrollY > 80) {
       setBackground(true);
     } else {
@@ -60,7 +59,7 @@ const Header = () => {
               CEK's Portfolio
             </div>
           </a>
-          {menu ? <NavigationBar background={background} /> : null}
+          {menu ? <NavBar background={background} /> : null}
 
           <a
             // href="#"
