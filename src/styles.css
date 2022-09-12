@@ -67,19 +67,23 @@ body {
 }
 
 .pageUpBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
+  z-index: 1000;
   bottom: 1.5rem;
   right: 1.5rem;
-  height: 45px;
-  width: 45px;
-  font-size: 30px;
-  border: 1.5px solid black;
-  border-radius: 0.5rem;
-  background-color: white;
-  opacity: 0.5;
-
-  z-index: 1000;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: var(--g-green);
+  color:white;
+  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.pageUpBtn i{
+  font-size: 18px;
+  position:relative;
+  top: -15px;
 }

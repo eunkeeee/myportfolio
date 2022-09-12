@@ -23,12 +23,12 @@ function App() {
   const isWideEnough = () => {};
 
   // pageUp Btn 관련코드
-  const [appearBtn, setAppear] = useState(false);
+  const [appearUpBtn, setappearUpBtn] = useState(false);
   const scrollDown = () => {
     if (window.scrollY > 500) {
-      setAppear(true);
+      setappearUpBtn(true);
     } else {
-      setAppear(false);
+      setappearUpBtn(false);
     }
   };
   const onPageUp = () => {
@@ -37,7 +37,7 @@ function App() {
       behavior: "smooth",
     });
   };
-  // useEffect(scrollDown, [appearBtn]);
+  // useEffect(scrollDown, [appearUpBtn]);
   window.addEventListener("scroll", scrollDown);
   return (
     <div className="app">
@@ -64,9 +64,10 @@ function App() {
         <Footer isPc={isPc} isTablet={isTablet} isMobile={isMobile} />
       </div>
 
-      {appearBtn ? (
+      {appearUpBtn ? (
         <div class="pageUpBtn" onClick={onPageUp}>
-          <i class="fa-solid fa-arrow-up"></i>
+          <i class="fa-solid fa-angle-up"></i>
+          <div>Go to TOP</div>
         </div>
       ) : null}
     </div>
