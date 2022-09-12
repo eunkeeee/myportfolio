@@ -1,6 +1,6 @@
 import styles from "./NavMenu.module.css";
 
-const NavMenu = ({ background, href, text, color }) => {
+const NavMenu = ({ background, href, text }) => {
   const transparentWhite = "hsla(0, 0%, 100%, 0.7)";
   const backgroundMenuColor = "#334A52";
   return (

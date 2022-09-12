@@ -56,7 +56,7 @@ const Header = () => {
                 color: `${background ? backgroundLogoColor : "#6ad7f6"}`,
               }}
             >
-              CEK's Portfolio
+              은기의 포트폴리오.
             </div>
           </a>
           {menu ? <NavBar background={background} /> : null}

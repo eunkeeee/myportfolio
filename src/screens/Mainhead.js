@@ -6,7 +6,8 @@ const Mainhead = () => {
       <div className={styles.Mainhead}>
         <div className={styles.content}>
           <div className={styles.title}>
-            - 조은기 -<br></br>웹 개발자 포트폴리오
+            <div className={styles.bigTitle}>- 조은기 -</div>
+            <div className={styles.smallTitle}>웹 개발자 포트폴리오</div>
           </div>
           <hr class={styles.divider}></hr>
           <div className={styles.description}>

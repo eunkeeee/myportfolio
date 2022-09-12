@@ -20,14 +20,20 @@
   margin: 0 auto;
   padding: 8.5rem 2rem 4rem 2rem;
   text-align: center;
-  font-family: var(--ko-article);
 }
 .title {
-  font-size: 4rem;
   color: white;
   word-break: keep-all;
-  font-family: var(--ko-title);
   animation: appear 2s ease-in-out 0s;
+}
+.bigTitle {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  font-family: "Gmarket-Sans-Bold";
+}
+.smallTitle {
+  font-size: 2.5rem;
+  font-family: "Gmarket-Sans-Medium";
 }
 .divider {
   width: 3.25rem;
@@ -46,6 +52,7 @@
   line-height: 1.5;
   opacity: 0;
   animation: appear 2s ease-in-out 0.5s forwards;
+  font-family: "Gmarket-Sans-Light";
 }
 .findOutMore {
   display: inline-block;

@@ -91,14 +91,14 @@ const PrjoectElement = ({
         </div>
       </div>
       {/* position absolute로 할것 */}
-      {/* 소스코드 바로가기 버튼 */}
+      {/* 소스코드 바로가기 버튼
       <a className={styles.btnWrapper} href={gitHubLink} target="_blank">
         <button className={styles.btn}>
           <i class="fa-brands fa-github"></i>
           <div>Source Code</div>
           <i class="fa-solid fa-arrow-right"></i>
         </button>
-      </a>
+      </a> */}
     </div>
   );
 };
