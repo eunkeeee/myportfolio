@@ -8,5 +8,5 @@
   margin: 0 auto;
 }
 .redColor {
-  color: red;
+  color: var(--carrot-red);
 }
