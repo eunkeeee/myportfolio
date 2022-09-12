@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
-import { onPageTop } from "../hooks/onPageMove";
+import { goToTop } from "../hooks/onPageMove";
 
 const Header = () => {
   const backgroundLogoColor = "#334A52";
@@ -50,7 +50,7 @@ const Header = () => {
       >
         <div className={styles.content}>
           <div
-            onClick={onPageTop}
+            onClick={goToTop}
             className={styles.title}
             // 색상 좀 멋진걸로 변경해볼까?
             style={{

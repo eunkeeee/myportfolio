@@ -8,7 +8,7 @@ import Archiving from "./screens/Archiving";
 import Project from "./screens/Project";
 import Footer from "./screens/Footer";
 import { useMediaQuery } from "react-responsive";
-import { onPageTop } from "./hooks/onPageMove";
+import { goToTop } from "./hooks/onPageMove";
 
 function App() {
   const isPc = useMediaQuery({
@@ -59,7 +59,7 @@ function App() {
       </div>
 
       {appearUpBtn ? (
-        <div class="pageUpBtn" onClick={onPageTop}>
+        <div class="pageUpBtn" onClick={goToTop}>
           <i class="fa-solid fa-angle-up"></i>
           <div>Go to TOP</div>
         </div>

@@ -14,7 +14,7 @@ const onPageMove = ({ index }) => {
   console.log(elementsHeight);
   return elementsHeight;
 };
-export const onPageTop = () => {
+export const goToTop = () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
