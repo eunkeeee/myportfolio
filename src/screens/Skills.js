@@ -4,7 +4,7 @@ import styles from "./Skills.module.css";
 
 const Skills = () => {
   return (
-    <article id="Skills" className={styles.Skills}>
+    <article className={styles.Skills}>
       <div className={styles.content}>
         <SubTitle id="Skills" title="Skills" />
         <div className={styles.techContainer}>

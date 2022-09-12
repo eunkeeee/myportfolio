@@ -1,7 +1,7 @@
 import styles from "./Subtitle.module.css";
 
 const SubTitle = ({ title, id, color = "black", linkColor = "white" }) => {
-  const url = "#" + id;
+  const url = "#section-" + id;
   return (
     <div className={styles.title}>
       <div className={styles.text} style={{ color }}>

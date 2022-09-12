@@ -14,7 +14,7 @@ const Mainhead = () => {
             안녕하세요 <br></br>예쁜게 가장 좋은 웹 개발자입니다. <br></br>
             꼼꼼한 성격, 방구석과 컴퓨터를 좋아하는 것이 저의 장점입니다.
           </div>
-          <a href="#AboutMe" className={styles.findOutMore}>
+          <a href="#section-AboutMe" className={styles.findOutMore}>
             더 알아보기 ↓
           </a>
         </div>

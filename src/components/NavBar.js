@@ -6,10 +6,18 @@ const NavigationBar = ({ background }) => {
   const backgroundMenuColor = "#334A52";
   return (
     <div className={styles.menus}>
-      <NavMenu text="About Me" href="#AboutMe" background={background} />
-      <NavMenu text="Skills" href="#Skills" background={background} />
-      <NavMenu text="Archiving" href="#Archiving" background={background} />
-      <NavMenu text="Projects" href="#Projects" background={background} />
+      <NavMenu
+        text="About Me"
+        href="#section-AboutMe"
+        background={background}
+      />
+      <NavMenu text="Skills" href="#section-Skills" background={background} />
+      <NavMenu
+        text="Archiving"
+        href="#section-Archiving"
+        background={background}
+      />
+      <NavMenu text="Project" href="#section-Project" background={background} />
     </div>
   );
 };

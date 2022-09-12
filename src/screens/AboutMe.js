@@ -4,7 +4,7 @@ import SubTitle from "../components/SubTitle";
 
 const AboutMe = () => {
   return (
-    <article id="AboutMe" className={styles.AboutMe}>
+    <article className={styles.AboutMe}>
       <div className={styles.content}>
         <SubTitle title="ABOUT ME" id="AboutMe" />
         <div className={styles.basic_infos}>

@@ -10,7 +10,7 @@ const Project = () => {
   return (
     <div id="Projects" className={styles.Projects}>
       <div className={styles.content}>
-        <SubTitle title="Projects" id="Projects" color="white" />
+        <SubTitle title="Project" id="Project" color="white" />
         <div className={styles.container}></div>
         {/* 포트폴리오 사이트 */}
         <ProjectElement

@@ -22,13 +22,28 @@ function App() {
   window.addEventListener("scroll", scrollDown);
   return (
     <div className="app">
-      <Header />
-      <Mainhead />
-      <AboutMe />
-      <Skills />
-      <Archiving />
-      <Project />
-      <Footer />
+      <div id="top"></div>
+      <div id="section-Header">
+        <Header />
+      </div>
+      <div id="section-Mainhead">
+        <Mainhead />
+      </div>
+      <div id="section-AboutMe">
+        <AboutMe />
+      </div>
+      <div id="section-Skills">
+        <Skills />
+      </div>
+      <div id="section-Archiving">
+        <Archiving />
+      </div>
+      <div id="section-Project">
+        <Project />
+      </div>
+      <div id="section-Footer">
+        <Footer />
+      </div>
 
       {appearBtn ? (
         <a href="#top">
