@@ -1,11 +1,9 @@
 import styles from "./NavBar.module.css";
-import NavMenu from "./NavMenu";
+import { NavMenu } from "./NavMenu";
 
-const NavigationBar = ({ background }) => {
-  const transparentWhite = "hsla(0, 0%, 100%, 0.7)";
-  const backgroundMenuColor = "#334A52";
+const NavBar = ({ background, onClick }) => {
   return (
-    <div className={styles.menus} id="section-navBar">
+    <div className={styles.menus} id="section-navBar" onClick={onClick}>
       <NavMenu
         index={0}
         text="About Me"
@@ -33,4 +31,4 @@ const NavigationBar = ({ background }) => {
     </div>
   );
 };
-export default NavigationBar;
+export default NavBar;

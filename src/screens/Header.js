@@ -61,7 +61,14 @@ const Header = () => {
             은기의 포트폴리오.
           </div>
 
-          {menu ? <NavBar background={background} /> : null}
+          {menu ? (
+            <NavBar
+              background={background}
+              onClick={() => {
+                setMenu(false);
+              }}
+            />
+          ) : null}
 
           <a
             // href="#"

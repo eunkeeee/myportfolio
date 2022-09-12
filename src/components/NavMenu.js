@@ -1,6 +1,6 @@
 import styles from "./NavMenu.module.css";
 
-const NavMenu = ({ background, href, text, index }) => {
+export const NavMenu = ({ background, text, index }) => {
   const transparentWhite = "hsla(0, 0%, 100%, 0.7)";
   const backgroundMenuColor = "#334A52";
 
@@ -36,5 +36,3 @@ const NavMenu = ({ background, href, text, index }) => {
     </div>
   );
 };
-
-export default NavMenu;
