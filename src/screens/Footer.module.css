@@ -1,7 +1,6 @@
 .Footer {
-  height: 12rem;
   background-color: var(--Footer-background);
-  padding-top: 3rem;
+  padding: 3rem 0;
   text-align: center;
 }
 .icons {

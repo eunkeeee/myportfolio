@@ -31,7 +31,11 @@ const Header = () => {
       }
     }
   };
-
+  const removeMenu = () => {
+    if (window.innerWidth <= 768) {
+      setMenu(false);
+    }
+  };
   // initialization
   useEffect(() => {
     if (window.innerWidth <= 768) {
@@ -62,12 +66,7 @@ const Header = () => {
           </div>
 
           {menu ? (
-            <NavBar
-              background={background}
-              onClick={() => {
-                setMenu(false);
-              }}
-            />
+            <NavBar background={background} onClick={removeMenu} />
           ) : null}
 
           <a

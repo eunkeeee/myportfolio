@@ -16,16 +16,17 @@ const NavBar = ({ background, onClick }) => {
         href="#section-Skills"
         background={background}
       />
+
       <NavMenu
         index={2}
-        text="Archiving"
-        href="#section-Archiving"
+        text="Project"
+        href="#section-Project"
         background={background}
       />
       <NavMenu
         index={3}
-        text="Project"
-        href="#section-Project"
+        text="Archiving"
+        href="#section-Archiving"
         background={background}
       />
     </div>

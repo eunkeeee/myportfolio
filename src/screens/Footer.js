@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Footer.module.css";
 import Icon from "../components/Icon";
+import SubTitle from "../components/SubTitle";
 
 const Footer = () => {
   const [copied, setCopied] = useState(false);
@@ -19,6 +20,7 @@ const Footer = () => {
   };
   return (
     <div className={styles.Footer}>
+      <SubTitle title="Contact" id="Contact" color="white" />
       <div className={styles.icons}>
         <Icon
           text="Github Link"
