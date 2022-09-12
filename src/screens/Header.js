@@ -2,46 +2,59 @@ import styles from "./Header.module.css";
 import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
 import { goToTop } from "../hooks/onPageMove";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
-  const backgroundLogoColor = "#334A52";
-  const [menu, setMenu] = useState(true);
   const [background, setBackground] = useState(false);
-  const onResize = () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    if (width <= 768) {
-      setMenu(false);
-      setBackground(true);
+  const [menu, setMenu] = useState(true);
+
+  const useScroll = () => {
+    const [state, setState] = useState({
+      x: 0,
+      y: 0,
+    });
+    const onScroll = () => {
+      setState({ y: window.scrollY, x: window.scrollX });
+    };
+    useEffect(() => {
+      window.addEventListener("scroll", onScroll);
+      return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+    return state;
+  };
+
+  const isPc = useMediaQuery({
+    query: "(min-width:1024px)",
+  });
+  const isTablet = useMediaQuery({
+    query: "(min-width:768px) and (max-width:1023px)",
+  });
+  const isMobile = useMediaQuery({
+    query: "(max-width:767px)",
+  });
+  // console.log(isPc);
+  // console.log(isTablet);
+  // console.log(isMobile);
+  const useBackground = () => {
+    const { y } = useScroll();
+    if (y < 80 && (isPc || isTablet)) {
+      console.log("no background");
+      setBackground(false);
     } else {
+      console.log("you need background");
+      setBackground(true);
+    }
+  };
+  const useMenu = () => {
+    if (isPc || isTablet) {
       setMenu(true);
-      setBackground(false);
-      if (window.scrollY > 80) {
-        setBackground(true);
-      }
-    }
-  };
-  const scrollDown = () => {
-    if (window.scrollY > 80) {
-      setBackground(true);
     } else {
-      setBackground(false);
-      if (window.innerWidth <= 768) {
-        setBackground(true);
-      }
+      setMenu(false);
     }
   };
 
-  // useEffect(onResize, [menu, background]);
-  // useEffect(scrollDown, [menu, background]);
+  const backgroundLogoColor = "#334A52";
 
-  window.addEventListener("resize", onResize);
-  window.addEventListener("scroll", scrollDown);
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      setMenu(false);
-      setBackground(true);
-    }
-  }, []);
   return (
     <div>
       <header
