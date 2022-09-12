@@ -74,7 +74,7 @@ body {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  background-color: var(--g-green);
+  background-color: var(--logo-color);
   color:white;
   
 display: flex;

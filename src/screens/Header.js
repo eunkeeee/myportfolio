@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
 import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
+import { onPageTop } from "../hooks/onPageMove";
 
 const Header = () => {
   const backgroundLogoColor = "#334A52";
@@ -48,17 +49,17 @@ const Header = () => {
         style={{ backgroundColor: `${background ? "white" : "transparent"}` }}
       >
         <div className={styles.content}>
-          <a href="#top">
-            <div
-              className={styles.title}
-              // 색상 좀 멋진걸로 변경해볼까?
-              style={{
-                color: `${background ? backgroundLogoColor : "#6ad7f6"}`,
-              }}
-            >
-              은기의 포트폴리오.
-            </div>
-          </a>
+          <div
+            onClick={onPageTop}
+            className={styles.title}
+            // 색상 좀 멋진걸로 변경해볼까?
+            style={{
+              color: `${background ? backgroundLogoColor : "#6ad7f6"}`,
+            }}
+          >
+            은기의 포트폴리오.
+          </div>
+
           {menu ? <NavBar background={background} /> : null}
 
           <a

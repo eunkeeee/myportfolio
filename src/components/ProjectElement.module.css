@@ -13,7 +13,7 @@
   font-size: 2.5rem;
   color: rgb(34, 34, 34);
   text-align: center;
-  font-family: var(--ko-title);
+  font-family: "Gmarket-Sans-Bold";
 }
 .period {
   margin-bottom: 2rem;
@@ -33,6 +33,7 @@
 }
 .imgs * {
   width: 100%;
+  border-radius: 10px;
 }
 .nav {
   display: flex;
@@ -46,7 +47,8 @@
   opacity: 0.7;
 }
 .descriptions {
-  font-family: var(--ko-article);
+  font-family: "Gmarket-Sans-Medium";
+  line-height: 150%;
   width: 45%;
 }
 
@@ -58,7 +60,7 @@ ul {
   margin-bottom: 1rem;
 }
 .li div:first-child {
-  width: 7rem;
+  width: 7.5rem;
   font-weight: 900;
   font-size: 1rem;
   vertical-align: top;
@@ -68,33 +70,9 @@ ul {
 .li > div:last-child * {
   font-weight: 400;
   font-size: 0.9rem;
-  width: calc(100% - 7rem);
+  width: calc(100% - 7.5rem);
   word-break: break-all;
   flex-shrink: 2;
-}
-/* Source Code Btn */
-.btnWrapper {
-  position: absolute;
-  right: 2rem;
-  top: 3rem;
-}
-.btn {
-  border: none;
-  background-color: #384152;
-  color: white;
-  font-size: 1.3rem;
-  line-height: 1.25rem;
-  padding: 0.5rem 1.25rem 0.5rem`;
-  align-items: center;
-  border-radius: calc(1.25rem + 1rem);
-}
-.btn i:first-child {
-  font-size: 2rem;
-  margin-right: 2rem;
-}
-.btn i:last-child {
-  margin-left: 1rem;
-  font-size: 1rem;
 }
 
 @media screen and (max-width: 1000px) {

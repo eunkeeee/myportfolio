@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Header from "./screens/Header";
 import Mainhead from "./screens/Mainhead";
@@ -8,6 +8,7 @@ import Archiving from "./screens/Archiving";
 import Project from "./screens/Project";
 import Footer from "./screens/Footer";
 import { useMediaQuery } from "react-responsive";
+import { onPageTop } from "./hooks/onPageMove";
 
 function App() {
   const isPc = useMediaQuery({
@@ -20,8 +21,6 @@ function App() {
     query: "(max-width:767px)",
   });
 
-  const isWideEnough = () => {};
-
   // pageUp Btn 관련코드
   const [appearUpBtn, setappearUpBtn] = useState(false);
   const scrollDown = () => {
@@ -31,12 +30,7 @@ function App() {
       setappearUpBtn(false);
     }
   };
-  const onPageUp = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+
   // useEffect(scrollDown, [appearUpBtn]);
   window.addEventListener("scroll", scrollDown);
   return (
@@ -65,7 +59,7 @@ function App() {
       </div>
 
       {appearUpBtn ? (
-        <div class="pageUpBtn" onClick={onPageUp}>
+        <div class="pageUpBtn" onClick={onPageTop}>
           <i class="fa-solid fa-angle-up"></i>
           <div>Go to TOP</div>
         </div>
