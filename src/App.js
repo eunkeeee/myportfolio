@@ -21,6 +21,8 @@ function App() {
   });
 
   const isWideEnough = () => {};
+
+  // pageUp Btn 관련코드
   const [appearBtn, setAppear] = useState(false);
   const scrollDown = () => {
     if (window.scrollY > 500) {
@@ -28,6 +30,12 @@ function App() {
     } else {
       setAppear(false);
     }
+  };
+  const onPageUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
   // useEffect(scrollDown, [appearBtn]);
   window.addEventListener("scroll", scrollDown);
@@ -57,11 +65,9 @@ function App() {
       </div>
 
       {appearBtn ? (
-        <a href="#top">
-          <div class="pageUpBtn">
-            <i class="fa-solid fa-arrow-up"></i>
-          </div>
-        </a>
+        <div class="pageUpBtn" onClick={onPageUp}>
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
       ) : null}
     </div>
   );
