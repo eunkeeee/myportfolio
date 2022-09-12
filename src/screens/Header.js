@@ -21,7 +21,7 @@ const Header = () => {
       }
     }
   };
-  const scrollDown = () => {
+  const onScroll = () => {
     if (window.scrollY > 80) {
       setBackground(true);
     } else {
@@ -32,17 +32,16 @@ const Header = () => {
     }
   };
 
-  // useEffect(onResize, [menu, background]);
-  // useEffect(scrollDown, [menu, background]);
-
-  window.addEventListener("resize", onResize);
-  window.addEventListener("scroll", scrollDown);
+  // initialization
   useEffect(() => {
     if (window.innerWidth <= 768) {
       setMenu(false);
       setBackground(true);
     }
   }, []);
+
+  window.addEventListener("resize", onResize);
+  window.addEventListener("scroll", onScroll);
 
   return (
     <div>
