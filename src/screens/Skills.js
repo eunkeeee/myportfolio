@@ -9,7 +9,7 @@ const Skills = () => {
         <SubTitle id="Skills" title="Skills" />
         <div className={styles.techContainer}>
           <Skill
-            title="Frontend"
+            title="프론트엔드"
             imgSrcsWithDiv={
               <div>
                 <img src="https://velog.velcdn.com/images/songe/post/c1c7427a-71c3-4de8-bf93-a224be79f6ae/image.PNG" />
@@ -19,7 +19,7 @@ const Skills = () => {
             }
           />
           <Skill
-            title="Backend"
+            title="백엔드"
             imgSrcsWithDiv={
               <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png" />
@@ -27,11 +27,20 @@ const Skills = () => {
             }
           />
           <Skill
-            title="Version Control"
+            title="버전컨트롤"
             imgSrcsWithDiv={
               <div>
                 <img src="https://image.toast.com/aaaadh/real/2017/techblog/GitLogo2Color.png" />
                 <img src="https://mblogthumb-phinf.pstatic.net/MjAyMDA3MTNfOTMg/MDAxNTk0NjM0NjI5NzUw.LxX1Whkaof_e-n3N_wO03lSoZl--YMF8dkgRMxImNk0g.BxwVQn5zShY21jnl8r8ynp0Kg9Ggqf1gtZgSMu970KQg.PNG.nms200299/github.png?type=w800" />
+              </div>
+            }
+          />
+          <Skill
+            title="자격증"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://www.korcham.net/nCham/Service/imgs/img_top_logo.png" />
+                <div>컴퓨터활용능력 1급</div>
               </div>
             }
           />
