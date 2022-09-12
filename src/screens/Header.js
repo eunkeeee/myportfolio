@@ -8,37 +8,37 @@ const Header = () => {
   const backgroundLogoColor = "#334A52";
   const [menu, setMenu] = useState(true);
   const [background, setBackground] = useState(false);
+  const y = window.scrollY;
+  const windowWidth = window.innerWidth;
   const onResize = () => {
-    const { innerWidth: width, innerHeight: height } = window;
-    if (width <= 768) {
+    if (windowWidth <= 768) {
       setMenu(false);
       setBackground(true);
     } else {
       setMenu(true);
       setBackground(false);
-      if (window.scrollY > 80) {
+      if (y > 80) {
         setBackground(true);
       }
     }
   };
-  const scrollDown = () => {
-    if (window.scrollY > 80) {
+  const onScroll = () => {
+    if (y > 80) {
       setBackground(true);
     } else {
       setBackground(false);
-      if (window.innerWidth <= 768) {
+      if (windowWidth <= 768) {
         setBackground(true);
       }
     }
   };
 
-  // useEffect(onResize, [menu, background]);
-  // useEffect(scrollDown, [menu, background]);
-
   window.addEventListener("resize", onResize);
-  window.addEventListener("scroll", scrollDown);
+  window.addEventListener("scroll", onScroll);
+
+  // initialization
   useEffect(() => {
-    if (window.innerWidth <= 768) {
+    if (windowWidth <= 768) {
       setMenu(false);
       setBackground(true);
     }
