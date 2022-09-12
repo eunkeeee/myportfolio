@@ -11,7 +11,7 @@ const Archiving = () => {
           <ArchivingElement
             imgSrc="https://png.monster/wp-content/uploads/2022/02/png.monster-703.png"
             url="https://github.com/eunkeeee"
-            p="모든 프로젝트의 소스코드를 저장한 GitHub입니다."
+            p="프로젝트의 소스코드를 저장한 GitHub입니다."
             // liArray=["과거 프로젝트, 프로그램, 앱의 소스 코드",
             // "혼자서 코딩 연습을 위해 끄적이던 소스 코드"]
           />

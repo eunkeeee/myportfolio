@@ -1,4 +1,4 @@
-import styles from "../screens/Archiving.module.css";
+import styles from "../components/ArchivingElement.module.css";
 
 const ArchivingElement = ({ imgSrc, url, p, liArray }) => {
   return (
@@ -10,11 +10,6 @@ const ArchivingElement = ({ imgSrc, url, p, liArray }) => {
         <div className={styles.url}>{url}</div>
         <div className={styles.description}>
           <p>{p}</p>
-          <ul>
-            {/* {liArray.foreach((element) => {
-            <li>{element}</li>;
-          })} */}
-          </ul>
         </div>
       </a>
     </div>

@@ -1,0 +1,23 @@
+.element {
+  padding: 2rem;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: var(--Archiving-element-background);
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.imgWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.element:hover {
+  transform: var(--getting-bigger);
+}
+.elementImg {
+  width: 75%;
+}
