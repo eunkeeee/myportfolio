@@ -9,6 +9,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
         <SubTitle id="Skills" title="스킬" />
         <div className={styles.techContainer}>
           <Skill
+            isMobile={isMobile}
             title="FrontEnd"
             imgSrcsWithDiv={
               <div>
@@ -19,6 +20,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             }
           />
           <Skill
+            isMobile={isMobile}
             title="Backend"
             imgSrcsWithDiv={
               <div>
@@ -27,6 +29,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             }
           />
           <Skill
+            isMobile={isMobile}
             title="Deployment"
             imgSrcsWithDiv={
               <div>
@@ -35,6 +38,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             }
           />
           <Skill
+            isMobile={isMobile}
             title="Version Control"
             imgSrcsWithDiv={
               <div>
@@ -44,6 +48,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             }
           />
           <Skill
+            isMobile={isMobile}
             title="Certificate"
             imgSrcsWithDiv={
               <div>

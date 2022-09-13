@@ -15,5 +15,5 @@
   /* height: auto; */
   height: calc(100% - (7.5rem + 1px));
   align-content: space-around;
-  justify-content: baseline;
+  justify-content: center;
 }
