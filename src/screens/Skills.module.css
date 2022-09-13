@@ -7,14 +7,13 @@
   max-width: 71.25rem;
   padding: 4rem 2rem;
   margin: 0 auto;
-  height: auto;
   /* height: 35rem; */
 }
 .techContainer {
   display: flex;
   flex-wrap: wrap;
-  height: auto;
-  /* height: calc(100% - (7.5rem + 1px)); */
+  /* height: auto; */
+  height: calc(100% - (7.5rem + 1px));
   align-content: space-around;
-  justify-content: center;
+  justify-content: baseline;
 }

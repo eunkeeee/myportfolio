@@ -2,14 +2,14 @@ import SubTitle from "../components/SubTitle";
 import Skill from "../components/Skill";
 import styles from "./Skills.module.css";
 
-const Skills = () => {
+const Skills = ({ isPc, isTablet, isMobile }) => {
   return (
     <article className={styles.Skills}>
       <div className={styles.content}>
         <SubTitle id="Skills" title="스킬" />
         <div className={styles.techContainer}>
           <Skill
-            title="프론트엔드"
+            title="FrontEnd"
             imgSrcsWithDiv={
               <div>
                 <img src="https://velog.velcdn.com/images/songe/post/c1c7427a-71c3-4de8-bf93-a224be79f6ae/image.PNG" />
@@ -19,7 +19,7 @@ const Skills = () => {
             }
           />
           <Skill
-            title="백엔드"
+            title="Backend"
             imgSrcsWithDiv={
               <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png" />
@@ -27,7 +27,15 @@ const Skills = () => {
             }
           />
           <Skill
-            title="버전컨트롤"
+            title="Deployment"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2560px-AmazonWebservices_Logo.svg.png" />
+              </div>
+            }
+          />
+          <Skill
+            title="Version Control"
             imgSrcsWithDiv={
               <div>
                 <img src="https://image.toast.com/aaaadh/real/2017/techblog/GitLogo2Color.png" />
@@ -36,7 +44,7 @@ const Skills = () => {
             }
           />
           <Skill
-            title="자격증"
+            title="Certificate"
             imgSrcsWithDiv={
               <div>
                 <img src="https://www.korcham.net/nCham/Service/imgs/img_top_logo.png" />

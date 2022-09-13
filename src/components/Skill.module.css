@@ -1,9 +1,7 @@
 .tech {
   flex-shrink: 0;
-  /* margin: 0 auto 2rem; */
   margin: 10px;
-  /* 나중에 지울것 */
-  width: 17rem;
+  width: 30%;
   padding: 1.3rem;
   border-radius: 1rem;
   background-color: white;
