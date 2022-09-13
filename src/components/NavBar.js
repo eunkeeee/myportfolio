@@ -12,15 +12,14 @@ const NavBar = ({ background, onClick }) => {
       />
       <NavMenu
         index={1}
-        text="스킬"
-        href="#section-Skills"
-        background={background}
-      />
-
-      <NavMenu
-        index={2}
         text="프로젝트"
         href="#section-Project"
+        background={background}
+      />
+      <NavMenu
+        index={2}
+        text="스킬"
+        href="#section-Skills"
         background={background}
       />
       <NavMenu

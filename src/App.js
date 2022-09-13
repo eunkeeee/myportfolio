@@ -45,11 +45,11 @@ function App() {
       <div id="section-AboutMe">
         <AboutMe isPc={isPc} isTablet={isTablet} isMobile={isMobile} />
       </div>
-      <div id="section-Skills">
-        <Skills isPc={isPc} isTablet={isTablet} isMobile={isMobile} />
-      </div>
       <div id="section-Project">
         <Project isPc={isPc} isTablet={isTablet} isMobile={isMobile} />
+      </div>
+      <div id="section-Skills">
+        <Skills isPc={isPc} isTablet={isTablet} isMobile={isMobile} />
       </div>
       <div id="section-Archiving">
         <Archiving isPc={isPc} isTablet={isTablet} isMobile={isMobile} />

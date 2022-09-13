@@ -6,7 +6,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
   return (
     <article className={styles.Skills}>
       <div className={styles.content}>
-        <SubTitle id="Skills" title="스킬" />
+        <SubTitle id="Skills" title="스킬" color="white" />
         <div className={styles.techContainer}>
           <Skill
             isMobile={isMobile}
