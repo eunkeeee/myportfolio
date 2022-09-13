@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { goToTop } from "../hooks/onPageMove";
 import { useMediaQuery } from "react-responsive";
 
-const Header = () => {
+const Header = ({ isPc, isTablet, isMobile }) => {
   const backgroundLogoColor = "#334A52";
   const [menu, setMenu] = useState(true);
   const [background, setBackground] = useState(false);
@@ -60,6 +60,7 @@ const Header = () => {
             // 색상 좀 멋진걸로 변경해볼까?
             style={{
               color: `${background ? backgroundLogoColor : "#6ad7f6"}`,
+              fontSize: `${isMobile ? "20px" : "30px"}`,
             }}
           >
             은기의 포트폴리오.
@@ -72,6 +73,7 @@ const Header = () => {
           <a
             // href="#"
             className={styles.toggleBtn}
+            style={{ fontSize: `${isMobile ? "20px" : "30px"}` }}
             onClick={() => {
               setMenu((current) => !current);
             }}
