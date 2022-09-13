@@ -1,11 +1,19 @@
 import styles from "./NavMenu.module.css";
+import { useMediaQuery } from "react-responsive";
 
 export const NavMenu = ({ background, text, index }) => {
+  const isMobile = useMediaQuery({
+    query: "(max-width:767px)",
+  });
   const transparentWhite = "hsla(0, 0%, 100%, 0.7)";
   const backgroundMenuColor = "#334A52";
-
   const onClick = () => {
-    const navBarHeight = 80;
+    let navBarHeight;
+    if (isMobile) {
+      navBarHeight = 71.2;
+    } else {
+      navBarHeight = 80;
+    }
     const aboutMeHeight = document.querySelector("#section-AboutMe").offsetTop;
     const skillsHeight = document.querySelector("#section-Skills").offsetTop;
     const ArchivingHeight =
@@ -13,8 +21,8 @@ export const NavMenu = ({ background, text, index }) => {
     const ProjectHeight = document.querySelector("#section-Project").offsetTop;
     const elementsHeight = [
       aboutMeHeight,
-      skillsHeight,
       ProjectHeight,
+      skillsHeight,
       ArchivingHeight,
     ];
     const elementHeight = elementsHeight[index];
