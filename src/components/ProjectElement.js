@@ -15,16 +15,19 @@ const PrjoectElement = ({
   deployment,
 }) => {
   return (
-    <div className={styles.Project}>
+    <div
+      className={styles.Project}
+      style={{ padding: `${isPc ? "3rem" : "2rem 1rem"}` }}
+    >
       <div
         className={styles.title}
-        style={{ fontSize: `${isMobile ? "1.7rem" : "2.5rem"}` }}
+        style={{ fontSize: `${isMobile ? "1.5rem" : "2.5rem"}` }}
       >
         {title}
       </div>
       <div
         className={styles.period}
-        style={{ fontSize: `${isMobile ? "0.9rem" : "1rem"}` }}
+        style={{ fontSize: `${isMobile ? "0.7rem" : "1rem"}` }}
       >
         {period}
       </div>
@@ -40,14 +43,19 @@ const PrjoectElement = ({
             <i class="fa-solid fa-angle-right"></i>
           </nav> */}
         </div>
-        <div
-          className={styles.descriptions}
-          style={{ fontSize: `${isMobile ? "0.9rem" : "1rem"}` }}
-        >
-          <div className={styles.MainDescription}>{MainDescription}</div>
+        <div className={styles.descriptions}>
+          <div
+            className={styles.MainDescription}
+            style={{ fontSize: `${isMobile ? "0.7rem" : "1rem"}` }}
+          >
+            {MainDescription}
+          </div>
 
           <hr />
-          <ul className="fa-ul">
+          <ul
+            style={{ fontSize: `${isMobile ? "0.7rem" : "1rem"}` }}
+            className="fa-ul"
+          >
             <li className={styles.li}>
               <div>
                 <span className="fa-li">

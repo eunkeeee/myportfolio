@@ -54,6 +54,7 @@
   opacity: 0;
   animation: appear 2s ease-in-out 0.5s forwards;
   font-family: "Gmarket-Sans-Light";
+  word-break: keep-all;
 }
 .findOutMore {
   display: inline-block;
