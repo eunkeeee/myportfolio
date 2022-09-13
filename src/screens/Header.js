@@ -1,7 +1,7 @@
 import styles from "./Header.module.css";
 import NavBar from "../components/NavBar";
 import { useEffect, useState } from "react";
-import { goToTop } from "../hooks/onPageMove";
+import { goToTop } from "../hooks/goToTop";
 import { useMediaQuery } from "react-responsive";
 
 const Header = ({ isPc, isTablet, isMobile }) => {

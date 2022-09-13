@@ -53,7 +53,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             imgSrcsWithDiv={
               <div>
                 <img src="https://www.korcham.net/nCham/Service/imgs/img_top_logo.png" />
-                <div>컴퓨터활용능력 1급</div>
+                컴퓨터활용능력 1급
               </div>
             }
           />

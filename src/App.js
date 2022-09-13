@@ -8,7 +8,7 @@ import Archiving from "./screens/Archiving";
 import Project from "./screens/Project";
 import Footer from "./screens/Footer";
 import { useMediaQuery } from "react-responsive";
-import { goToTop } from "./hooks/onPageMove";
+import { goToTop } from "./hooks/goToTop";
 
 function App() {
   const isPc = useMediaQuery({

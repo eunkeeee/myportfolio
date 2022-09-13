@@ -1,6 +1,9 @@
 import styles from "./ProjectElement.module.css";
 
 const PrjoectElement = ({
+  isPc,
+  isTablet,
+  isMobile,
   imgSrc,
   title,
   period,
@@ -13,10 +16,23 @@ const PrjoectElement = ({
 }) => {
   return (
     <div className={styles.Project}>
-      <div className={styles.title}>{title}</div>
-      <div className={styles.period}>{period}</div>
+      <div
+        className={styles.title}
+        style={{ fontSize: `${isMobile ? "1.7rem" : "2.5rem"}` }}
+      >
+        {title}
+      </div>
+      <div
+        className={styles.period}
+        style={{ fontSize: `${isMobile ? "0.9rem" : "1rem"}` }}
+      >
+        {period}
+      </div>
       <div className={styles.info}>
-        <div className={styles.imgs}>
+        <div
+          className={styles.imgs}
+          style={{ width: `${isPc ? "50%" : "100%"}` }}
+        >
           {imgSrc}
           {/* <nav className={styles.nav}>
             <i class="fa-solid fa-angle-left"></i>
@@ -24,7 +40,10 @@ const PrjoectElement = ({
             <i class="fa-solid fa-angle-right"></i>
           </nav> */}
         </div>
-        <div className={styles.descriptions}>
+        <div
+          className={styles.descriptions}
+          style={{ fontSize: `${isMobile ? "0.9rem" : "1rem"}` }}
+        >
           <div className={styles.MainDescription}>{MainDescription}</div>
 
           <hr />

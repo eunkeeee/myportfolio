@@ -5,7 +5,7 @@ import styles from "./Project.module.css";
 import ProjectKakaotalk from "../img/kakaotalk.jpg";
 import ProjectProfileWebsite from "../img/profilewebsite.jpg";
 
-const Project = () => {
+const Project = ({ isPc, isTablet, isMobile }) => {
   const [count, setCount] = useState(0);
   return (
     <div id="Projects" className={styles.Projects}>
@@ -14,6 +14,9 @@ const Project = () => {
         <div className={styles.container}></div>
         {/* 포트폴리오 사이트 */}
         <ProjectElement
+          isPc={isPc}
+          isTablet={isTablet}
+          isMobile={isMobile}
           imgSrc={<img src={ProjectProfileWebsite} />}
           title="포트폴리오 웹사이트"
           period="2022.08 (개인 프로젝트)"
@@ -45,6 +48,9 @@ const Project = () => {
           frontend="ReactJS"
         />
         <ProjectElement
+          isPc={isPc}
+          isTablet={isTablet}
+          isMobile={isMobile}
           imgSrc="#"
           title="은기의 답정너 카카오톡"
           period="2022.06 ~ 2022.08 (개인 프로젝트)"

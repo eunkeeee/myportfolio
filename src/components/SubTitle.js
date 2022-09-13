@@ -10,7 +10,7 @@ const SubTitle = ({ title, id, color = "black", linkColor = "white" }) => {
     <div className={styles.title}>
       <div
         className={styles.text}
-        style={{ color, fontSize: `${isMobile ? "2.5rem" : "3rem"}` }}
+        style={{ color, fontSize: `${isMobile ? "2.3rem" : "3rem"}` }}
       >
         {title}
       </div>
