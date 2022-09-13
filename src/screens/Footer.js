@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 import Icon from "../components/Icon";
 import SubTitle from "../components/SubTitle";
 
-const Footer = () => {
+const Footer = ({ isMobile }) => {
   const [copied, setCopied] = useState(false);
   const copyMailAddress = () => {
     setCopied(true);
@@ -36,7 +36,10 @@ const Footer = () => {
           url="https://instagram.com/eunkeeee?igshid=YmMyMTA2M2Y="
         />
       </div>
-      <div className={styles.copyright}>
+      <div
+        className={styles.copyright}
+        style={{ fontSize: `${isMobile ? "0.4rem" : "0.9rem"}` }}
+      >
         copyright &copy; 2022. Cho Eunki. All rights reserved.
       </div>
     </div>
