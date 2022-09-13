@@ -30,7 +30,7 @@ const Mainhead = ({ isMobile }) => {
           <hr class={styles.divider}></hr>
           <div
             className={styles.description}
-            style={{ fontSize: `${isMobile ? "0.75rem" : "1.25rem"}` }}
+            style={{ fontSize: `${isMobile ? "0.7rem" : "1.25rem"}` }}
           >
             안녕하세요 <br></br>예쁜게 가장 좋은 웹 개발자입니다. <br></br>
             꼼꼼한 성격, 방구석과 컴퓨터를 좋아하는 것이 저의 장점입니다.
