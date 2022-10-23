@@ -4,6 +4,8 @@ import SubTitle from "../components/SubTitle";
 import styles from "./Project.module.css";
 import ProjectKakaotalk from "../img/kakaotalk.jpg";
 import ProjectProfileWebsite from "../img/profilewebsite.jpg";
+import ProjectTwitterClone from "../img/twitterclone.png";
+import ProjectYoutubeClone from "../img/youtubeclone.png";
 
 const Project = ({ isPc, isTablet, isMobile }) => {
   const [count, setCount] = useState(0);
@@ -12,7 +14,43 @@ const Project = ({ isPc, isTablet, isMobile }) => {
       <div className={styles.content}>
         <SubTitle title="프로젝트" id="Project" color="white" />
         <div className={styles.container}></div>
-        {/* 포트폴리오 사이트 */}
+        <ProjectElement
+          isPc={isPc}
+          isTablet={isTablet}
+          isMobile={isMobile}
+          imgSrc={<img src={ProjectYoutubeClone} />}
+          title="유튜브 클론코딩"
+          period="2022.09 ~ 2022.10 (학습용 프로젝트)"
+          gitHubLink="https://github.com/eunkeeee/youtubeclone"
+          url="https://appyoutubeclone.herokuapp.com/"
+          deployment="Heroku"
+          MainDescription={
+            <div>
+              처음으로 풀스택 커리어를 결심하게 된 프로젝트입니다. 유튜브의 핵심
+              기능 중{" "}
+              <b>
+                사용자 인증, 게시글 작성, 댓글 작성, 동영상 재생, 동영상 및
+                사용자 프로필 수정
+              </b>{" "}
+              기능을 구현했습니다.
+              <p>
+                처음으로 <span className={styles.redColor}>MongoDB</span>를
+                사용해보았는데, json 기반으로 저장되는 데이터의 장단점에 대해
+                이해하고 필요한 데이터를 populate하는 법, 비동기처리에 대해
+                고민해볼 수 있었습니다.
+              </p>
+              <p>
+                구현하려는 서비스에 적합한 DB의 구조에 대해서도 공부하고 싶다는
+                생각을 하게 되었고, 백엔드 공부를 시작하는 계기가 되었습니다.
+              </p>
+            </div>
+          }
+          MainFeature="사용자 인증, 게시글 작성, 댓글 작성, 동영상 재생, 동영상 및
+          사용자 프로필 수정"
+          frontend="HTML5, CSS3, Pug"
+          backend="NodeJS, Express"
+          database="MongoDB"
+        />
         <ProjectElement
           isPc={isPc}
           isTablet={isTablet}
@@ -45,7 +83,7 @@ const Project = ({ isPc, isTablet, isMobile }) => {
             </div>
           }
           MainFeature="자기소개, 인적사항, 기술스펙, 연락처, 프로젝트 경험"
-          frontend="ReactJS"
+          frontend="React"
         />
         <ProjectElement
           isPc={isPc}
@@ -88,6 +126,40 @@ const Project = ({ isPc, isTablet, isMobile }) => {
           url="https://eunkeeee.github.io/jihoon-chat/"
           frontend="HTML, CSS, VanillaJS"
           deployment="gh-pages"
+        />
+        <ProjectElement
+          isPc={isPc}
+          isTablet={isTablet}
+          isMobile={isMobile}
+          imgSrc={<img src={ProjectTwitterClone} />}
+          title="트위터 클론코딩"
+          period="2022.10 (학습용 프로젝트)"
+          gitHubLink="https://github.com/eunkeeee/twitterclone"
+          url="https://eunkeeee.github.io/twitterclone"
+          deployment="github-pages"
+          MainDescription={
+            <div>
+              트위터의 <b>실시간 트윗 기능</b>을 클론한 프로젝트입니다.
+              <p>
+                사용자 인증, 트윗 내용 저장에 필요한 DB는{" "}
+                <span className={styles.redColor}>Firebase</span>에서 제공하는
+                서비스를 사용해 제작했습니다. MongoDB와 NodeJS를 통해 구현하던
+                백엔드의 긴 코드를 firebase의 짧은 메서드가 대체하는 점이
+                효율적이라고 생각했고, 백엔드의 사용 방식에 대해서도 고민해 볼
+                수 있었습니다.
+              </p>
+              <p>
+                편리하지만 자유도가 낮은 firebase의 특성을 이해하고, document를
+                보며 스스로 환경설정을 할 수 있는 능력을 길렀습니다. 빠르게 저의
+                아이디어를 구현해보고 싶을 때에 firebase 또는 AWS를 사용하겠다는
+                생각을 했습니다.
+              </p>
+            </div>
+          }
+          MainFeature="회원가입, 로그인, 실시간 트윗, 사진 파일을 포함한 트윗, 사용자 프로필 수정"
+          frontend="React"
+          backend="NodeJS"
+          database="firebase"
         />
       </div>
     </div>

@@ -12,6 +12,8 @@ const PrjoectElement = ({
   MainFeature,
   url,
   frontend,
+  backend,
+  database,
   deployment,
 }) => {
   return (
@@ -92,21 +94,41 @@ const PrjoectElement = ({
                 </a>
               </div>
             </li>
+            {frontend && (
+              <li className={styles.li}>
+                <div>
+                  <span className="fa-li">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <div>Frontend</div>
+                </div>
+                <div>{frontend}</div>
+              </li>
+            )}
+            {backend && (
+              <li className={styles.li}>
+                <div>
+                  <span className="fa-li">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <div>Backend</div>
+                </div>
+                <div>{backend}</div>
+              </li>
+            )}
+            {database && (
+              <li className={styles.li}>
+                <div>
+                  <span className="fa-li">
+                    <i class="fa-solid fa-check"></i>
+                  </span>
+                  <div>Database</div>
+                </div>
+                <div>{database}</div>
+              </li>
+            )}
             <li className={styles.li}>
-              {" "}
               <div>
-                {" "}
-                <span className="fa-li">
-                  <i class="fa-solid fa-check"></i>
-                </span>
-                <div>Frontend</div>
-              </div>
-              <div>{frontend}</div>
-            </li>
-            <li className={styles.li}>
-              {" "}
-              <div>
-                {" "}
                 <span className="fa-li">
                   <i class="fa-solid fa-check"></i>
                 </span>
