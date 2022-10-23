@@ -85,48 +85,7 @@ const Project = ({ isPc, isTablet, isMobile }) => {
           MainFeature="자기소개, 인적사항, 기술스펙, 연락처, 프로젝트 경험"
           frontend="React"
         />
-        <ProjectElement
-          isPc={isPc}
-          isTablet={isTablet}
-          isMobile={isMobile}
-          imgSrc="#"
-          title="은기의 답정너 카카오톡"
-          period="2022.06 ~ 2022.08 (개인 프로젝트)"
-          imgSrc={<img src={ProjectKakaotalk} />}
-          gitHubLink="https://github.com/eunkeeee/jihoon-chat"
-          MainDescription={
-            <div>
-              저의 <b>첫 번째 프로젝트</b>로, <b>답정너</b>('<b>답</b>은{" "}
-              <b>정</b>해져 있고 <b>너</b>는 답만 하면 돼'의 줄임말)라는 주제에
-              따라, 원하는 답변을 입력해 전송하면 정해진 대답(편지형식)이
-              돌아오는 형태의 기능을 가지고 있습니다.{" "}
-              <p>
-                2022년 6월 웹 프론트 개발 공부를 처음 시작하며 만들기
-                시작하였고,
-                <span className={styles.redColor}>HTML, CSS</span>를 사용하여
-                실제 카카오톡 앱의 디자인을 최대한 클론하려 하였고, 1차적으로
-                프로젝트를 완성하였습니다.
-              </p>
-              <p>
-                이후에 공부한 <span className={styles.redColor}>VanillaJS</span>
-                를 사용하여{" "}
-                <b>input에 "사랑"이라는 단어가 포함된 채로 submit</b>되면 기존에
-                적어놓은 <b>편지의 내용을 전송하는 방식</b>으로 남자친구의
-                생일을 기념하여 2일간 제작하였습니다.{" "}
-              </p>
-              <p>
-                CSS를 사용한 <b>다양한 애니메이션</b>에서는 실제 카카오톡과
-                유사한 애니메이션을 구현하고자 많은 공부를 했고, VanillaJS를
-                사용해 실제 시간을 표시하는 <b>시게</b>를 추가하여 완성도를
-                높였습니다.{" "}
-              </p>
-            </div>
-          }
-          MainFeature="Frontend만을 사용해 구현한 채팅기능, 시계"
-          url="https://eunkeeee.github.io/jihoon-chat/"
-          frontend="HTML, CSS, VanillaJS"
-          deployment="gh-pages"
-        />
+
         <ProjectElement
           isPc={isPc}
           isTablet={isTablet}
@@ -160,6 +119,48 @@ const Project = ({ isPc, isTablet, isMobile }) => {
           frontend="React"
           backend="NodeJS"
           database="firebase"
+        />
+        <ProjectElement
+          isPc={isPc}
+          isTablet={isTablet}
+          isMobile={isMobile}
+          imgSrc="#"
+          title="은기의 답정너 카카오톡"
+          period="2022.06 ~ 2022.08 (개인 프로젝트)"
+          imgSrc={<img src={ProjectKakaotalk} />}
+          gitHubLink="https://github.com/eunkeeee/jihoon-chat"
+          MainDescription={
+            <div>
+              저의 <b>첫 번째 프로젝트</b>로, <b>답정너</b>('<b>답</b>은{" "}
+              <b>정</b>해져 있고 <b>너</b>는 답만 하면 돼'의 줄임말)라는 주제에
+              따라, 원하는 답변을 입력해 전송하면 정해진 대답(편지형식)이
+              돌아오는 형태의 기능을 가지고 있습니다.{" "}
+              <p>
+                2022년 6월 웹 프론트 개발 공부를 처음 시작하며 만들기
+                시작하였고,
+                <span className={styles.redColor}>HTML, CSS</span>를 사용하여
+                실제 카카오톡 앱의 디자인을 최대한 클론하려 하였고, 1차적으로
+                프로젝트를 완성하였습니다.
+              </p>
+              <p>
+                이후에 공부한 <span className={styles.redColor}>VanillaJS</span>
+                를 사용하여{" "}
+                <b>input에 "사랑"이라는 단어가 포함된 채로 submit</b>되면 기존에
+                적어놓은 <b>편지의 내용을 전송하는 방식</b>으로 남자친구의
+                생일을 기념하여 2일간 제작하였습니다.{" "}
+              </p>
+              <p>
+                CSS를 사용한 <b>다양한 애니메이션</b>에서는 실제 카카오톡과
+                유사한 애니메이션을 구현하고자 많은 공부를 했고, VanillaJS를
+                사용해 실제 시간을 표시하는 <b>시계</b>를 추가하여 완성도를
+                높였습니다.{" "}
+              </p>
+            </div>
+          }
+          MainFeature="Frontend만을 사용해 구현한 채팅기능, 시계"
+          url="https://eunkeeee.github.io/jihoon-chat/"
+          frontend="HTML, CSS, VanillaJS"
+          deployment="gh-pages"
         />
       </div>
     </div>
