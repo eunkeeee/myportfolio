@@ -25,6 +25,26 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             imgSrcsWithDiv={
               <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/1280px-Python_logo_and_wordmark.svg.png" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" />
+              </div>
+            }
+          />
+          <Skill
+            isMobile={isMobile}
+            title="Mobile App"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://images.velog.io/images/yonyas/post/bda34a4c-2448-4aa4-995e-edf92bad78e7/RNlogo.png" />
+              </div>
+            }
+          />
+          <Skill
+            isMobile={isMobile}
+            title="Database"
+            imgSrcsWithDiv={
+              <div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Firebase_Logo.png" />
               </div>
             }
           />
@@ -34,6 +54,7 @@ const Skills = ({ isPc, isTablet, isMobile }) => {
             imgSrcsWithDiv={
               <div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AmazonWebservices_Logo.svg/2560px-AmazonWebservices_Logo.svg.png" />
+                <img src="https://techrecipe.co.kr/wp-content/uploads/2022/08/220826_heroku_00001.png" />
               </div>
             }
           />

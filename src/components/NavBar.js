@@ -24,7 +24,7 @@ const NavBar = ({ background, onClick }) => {
       />
       <NavMenu
         index={3}
-        text="연락처"
+        text="아카이브"
         href="#section-Archiving"
         background={background}
       />

@@ -95,7 +95,7 @@ const Project = ({ isPc, isTablet, isMobile }) => {
           period="2022.10 (학습용 프로젝트)"
           gitHubLink="https://github.com/eunkeeee/twitterclone"
           url="https://eunkeeee.github.io/twitterclone"
-          deployment="github-pages"
+          deployment="gh-pages"
           MainDescription={
             <div>
               트위터의 <b>실시간 트윗 기능</b>을 클론한 프로젝트입니다.
@@ -124,7 +124,6 @@ const Project = ({ isPc, isTablet, isMobile }) => {
           isPc={isPc}
           isTablet={isTablet}
           isMobile={isMobile}
-          imgSrc="#"
           title="은기의 답정너 카카오톡"
           period="2022.06 ~ 2022.08 (개인 프로젝트)"
           imgSrc={<img src={ProjectKakaotalk} />}
@@ -161,6 +160,51 @@ const Project = ({ isPc, isTablet, isMobile }) => {
           url="https://eunkeeee.github.io/jihoon-chat/"
           frontend="HTML, CSS, VanillaJS"
           deployment="gh-pages"
+        />
+        <ProjectElement
+          noUls={true}
+          isPc={isPc}
+          isTablet={isTablet}
+          isMobile={isMobile}
+          title="활동"
+          period="2021 ~ 2022"
+          MainDescription={
+            <div>
+              <ul>
+                <li>
+                  <b>[수상] 한국생산관리학회 춘계학술대회 최우수상 (2022)</b>
+                  <br />
+                  활동하던 SCM (공급망경영) 학회에서 나간 대회에서 [운전자의
+                  안전을 고려한 화물차 공유 플랫폼]이라는 주제로 최우수상을
+                  수상했습니다. 플랫폼의 확장 가능성을 중심으로 고민하며 IT
+                  서비스에 관심을 갖게 되었습니다.
+                </li>
+                <br />
+                <li>
+                  <b>
+                    [수상] 보건복지부 장관상 (시청각장애인 보조기기 해커톤)
+                    (2022)
+                  </b>
+                  <br />
+                  시청각장애인의 두 손을 자유롭게 하면서도 6개의 EMS 패치를
+                  사용해 다양한 외부 정보를 전달할 수 있는 EMS 수트 [식스센스]를
+                  제작했습니다.
+                </li>
+                <br />
+                <li>
+                  <b>
+                    [봉사활동] 한국공학한림원 산하 대학생단체 [YEHS] 기획부
+                    운영진 (2021.06 ~ 2022)
+                  </b>
+                  <br />
+                  3000여 명의 YEHS 회원을 위한 행사를 기획했습니다. 가장 기억에
+                  남는 행사는 '기술 소외 가구를 위한 아이디어톤'을 주최하고
+                  진행을 맡았을 때와, 100명 이상의 참가자가 와 공학계 연사님들의
+                  강연을 듣는 '리더십포럼'을 기획한 일이었습니다.
+                </li>
+              </ul>
+            </div>
+          }
         />
       </div>
     </div>

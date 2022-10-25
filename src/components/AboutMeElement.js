@@ -1,12 +1,22 @@
 import styles from "./AboutMeElement.module.css";
 import { useMediaQuery } from "react-responsive";
 
-const AboutMeElement = ({ iconImport, fieldLabel, fieldValue }) => {
+const AboutMeElement = ({
+  iconImport,
+  fieldLabel,
+  fieldValue,
+  onClick,
+  onMouseLeave,
+}) => {
   const isMobile = useMediaQuery({
     query: "(max-width:767px)",
   });
   return (
-    <div className={styles.wrapper}>
+    <div
+      className={styles.wrapper}
+      onClick={onClick}
+      onMouseLeave={onMouseLeave}
+    >
       <div className={styles.basic_info}>
         <div
           className={styles.icon_wrapper}

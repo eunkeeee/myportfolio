@@ -1,8 +1,23 @@
+import { useState } from "react";
 import styles from "./AboutMe.module.css";
 import AboutMeElement from "../components/AboutMeElement";
 import SubTitle from "../components/SubTitle";
 
 const AboutMe = () => {
+  const [copied, setCopied] = useState(false);
+  const copyMailAddress = () => {
+    setCopied(true);
+    const tempElem = document.createElement("textarea");
+    tempElem.value = "eunkeee@yonsei.ac.kr";
+    document.body.appendChild(tempElem);
+
+    tempElem.select();
+    document.body.removeChild(tempElem);
+    alert("Copied e-mail address to clipboard!");
+  };
+  const backToGmail = () => {
+    setCopied(false);
+  };
   return (
     <article className={styles.AboutMe}>
       <div className={styles.content}>
@@ -32,6 +47,8 @@ const AboutMe = () => {
             iconImport={<i class="fa-solid fa-at"></i>}
             fieldLabel="이메일"
             fieldValue="eunkeee@yonsei.ac.kr"
+            onClick={copyMailAddress}
+            onMouseLeave={backToGmail}
           />
           <AboutMeElement
             iconImport={<i class="fa-solid fa-school"></i>}

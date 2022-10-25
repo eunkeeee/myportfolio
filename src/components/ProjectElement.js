@@ -15,6 +15,7 @@ const PrjoectElement = ({
   backend,
   database,
   deployment,
+  noUls,
 }) => {
   return (
     <div
@@ -34,18 +35,18 @@ const PrjoectElement = ({
         {period}
       </div>
       <div className={styles.info}>
+        {imgSrc && (
+          <div
+            className={styles.imgs}
+            style={{ width: `${isPc ? "50%" : "100%"}` }}
+          >
+            {imgSrc}
+          </div>
+        )}
         <div
-          className={styles.imgs}
-          style={{ width: `${isPc ? "50%" : "100%"}` }}
+          className={styles.descriptions}
+          style={{ width: `${noUls ? "100%" : "45%"}` }}
         >
-          {imgSrc}
-          {/* <nav className={styles.nav}>
-            <i class="fa-solid fa-angle-left"></i>
-            4/4
-            <i class="fa-solid fa-angle-right"></i>
-          </nav> */}
-        </div>
-        <div className={styles.descriptions}>
           <div
             className={styles.MainDescription}
             style={{ fontSize: `${isMobile ? "0.7rem" : "1rem"}` }}
@@ -53,90 +54,99 @@ const PrjoectElement = ({
             {MainDescription}
           </div>
 
-          <hr />
-          <ul
-            style={{ fontSize: `${isMobile ? "0.7rem" : "1rem"}` }}
-            className="fa-ul"
-          >
-            <li className={styles.li}>
-              <div>
-                <span className="fa-li">
-                  <i className="fa-solid fa-check"></i>
-                </span>
-                <div>주요 기능</div>
-              </div>
-              <div>{MainFeature}</div>
-            </li>
-            <li className={styles.li}>
-              <div>
-                {" "}
-                <span className="fa-li">
-                  <i class="fa-solid fa-check"></i>
-                </span>
-                <div>GitHub</div>
-              </div>
-              <div>
-                <a href={gitHubLink} target="_blank" className={styles.urlDeco}>
-                  {gitHubLink}
-                </a>
-              </div>
-            </li>
-            <li className={styles.li}>
-              <div>
-                <span className="fa-li">
-                  <i class="fa-solid fa-check"></i>
-                </span>
-                <div>URL</div>
-              </div>
-              <div>
-                <a href={url} target="_blank" className={styles.urlDeco}>
-                  {url}
-                </a>
-              </div>
-            </li>
-            {frontend && (
-              <li className={styles.li}>
-                <div>
-                  <span className="fa-li">
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <div>Frontend</div>
-                </div>
-                <div>{frontend}</div>
-              </li>
-            )}
-            {backend && (
-              <li className={styles.li}>
-                <div>
-                  <span className="fa-li">
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <div>Backend</div>
-                </div>
-                <div>{backend}</div>
-              </li>
-            )}
-            {database && (
-              <li className={styles.li}>
-                <div>
-                  <span className="fa-li">
-                    <i class="fa-solid fa-check"></i>
-                  </span>
-                  <div>Database</div>
-                </div>
-                <div>{database}</div>
-              </li>
-            )}
-            <li className={styles.li}>
-              <div>
-                <span className="fa-li">
-                  <i class="fa-solid fa-check"></i>
-                </span>
-                <div>Deployment</div>
-              </div>
-              <div>{deployment}</div>
-            </li>
-          </ul>
+          {!noUls && (
+            <>
+              {" "}
+              <hr />
+              <ul
+                style={{ fontSize: `${isMobile ? "0.7rem" : "1rem"}` }}
+                className="fa-ul"
+              >
+                <li className={styles.li}>
+                  <div>
+                    <span className="fa-li">
+                      <i className="fa-solid fa-check"></i>
+                    </span>
+                    <div>주요 기능</div>
+                  </div>
+                  <div>{MainFeature}</div>
+                </li>
+                <li className={styles.li}>
+                  <div>
+                    {" "}
+                    <span className="fa-li">
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    <div>GitHub</div>
+                  </div>
+                  <div>
+                    <a
+                      href={gitHubLink}
+                      target="_blank"
+                      className={styles.urlDeco}
+                    >
+                      {gitHubLink}
+                    </a>
+                  </div>
+                </li>
+                <li className={styles.li}>
+                  <div>
+                    <span className="fa-li">
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    <div>URL</div>
+                  </div>
+                  <div>
+                    <a href={url} target="_blank" className={styles.urlDeco}>
+                      {url}
+                    </a>
+                  </div>
+                </li>
+                {frontend && (
+                  <li className={styles.li}>
+                    <div>
+                      <span className="fa-li">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      <div>Frontend</div>
+                    </div>
+                    <div>{frontend}</div>
+                  </li>
+                )}
+                {backend && (
+                  <li className={styles.li}>
+                    <div>
+                      <span className="fa-li">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      <div>Backend</div>
+                    </div>
+                    <div>{backend}</div>
+                  </li>
+                )}
+                {database && (
+                  <li className={styles.li}>
+                    <div>
+                      <span className="fa-li">
+                        <i class="fa-solid fa-check"></i>
+                      </span>
+                      <div>Database</div>
+                    </div>
+                    <div>{database}</div>
+                  </li>
+                )}
+                <li className={styles.li}>
+                  <div>
+                    <span className="fa-li">
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    <div>Deployment</div>
+                  </div>
+                  <div>{deployment}</div>
+                </li>
+              </ul>
+            </>
+          )}
         </div>
       </div>
       {/* position absolute로 할것 */}
